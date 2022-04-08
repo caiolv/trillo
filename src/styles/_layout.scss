@@ -11,14 +11,9 @@
     display: flex;
 }
 
-.sidebar {
-    background-color: var(--color-grey-dark-1);
-
-    flex: 0 0 18%;
-}
-
 .hotel-view {
     background-color: #FFF;
+    height: 80rem;
 
     flex: 1;
 }
