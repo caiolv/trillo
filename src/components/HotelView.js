@@ -76,10 +76,10 @@ function HotelView() {
                     Lucy and 3 other friends recommend this hotel.
                 </p>
                 <div className='recommend__friends'>
-                    <img src={user3} alt="Friend 1" className='recommend_photo' />
-                    <img src={user4} alt="Friend 2" className='recommend_photo' />
-                    <img src={user5} alt="Friend 3" className='recommend_photo' />
-                    <img src={user6} alt="Friend 4" className='recommend_photo' />
+                    <img src={user3} alt="Friend 1" className='recommend__photo' />
+                    <img src={user4} alt="Friend 2" className='recommend__photo' />
+                    <img src={user5} alt="Friend 3" className='recommend__photo' />
+                    <img src={user6} alt="Friend 4" className='recommend__photo' />
                 </div>
             </div>
         </div>
