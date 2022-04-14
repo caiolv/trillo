@@ -2,6 +2,8 @@ import sprite from '../assets/sprite.svg';
 import hotelOne from '../assets/hotel-1.jpg';
 import hotelTwo from '../assets/hotel-2.jpg';
 import hotelThree from '../assets/hotel-3.jpg';
+import user1 from '../assets/user-1.jpg';
+import user2 from '../assets/user-2.jpg';
 import user3 from '../assets/user-3.jpg';
 import user4 from '../assets/user-4.jpg';
 import user5 from '../assets/user-5.jpg';
@@ -83,8 +85,36 @@ function HotelView() {
                 </div>
             </div>
         </div>
+
         <div className='user-reviews'>
-            user-reviews
+            <figure class="review">
+                <blockqute class="review__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                </blockqute>
+                <figcaption class="review__user">
+                    <img src={user1} alt="User 1" class="review__photo" />
+                    <div class="review__user-box">
+                        <p class="review__user-name">Nick Smith</p>
+                        <p class="review__user-date">Feb 23rd, 2020</p>
+                    </div>
+                    <div class="review__rating">7.8</div>
+                </figcaption>
+            </figure>
+            <figure class="review">
+                <blockqute class="review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                </blockqute>
+                <figcaption class="review__user">
+                    <img src={user2} alt="User 2" class="review__photo" />
+                    <div class="review__user-box">
+                        <p class="review__user-name">Mary Thomas</p>
+                        <p class="review__user-date">Sept 13th, 2017</p>
+                    </div>
+                    <div class="review__rating">9.3</div>
+                </figcaption>
+            </figure>
+            
+            <button class="btn-inline">Show all <span>&rarr;</span></button>
         </div>
       </div>
 
