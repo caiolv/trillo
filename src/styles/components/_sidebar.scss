@@ -74,6 +74,11 @@
                 justify-content: center;
                 padding: 2rem;
             }
+
+            @media only screen and (max-width: $bp-small) {
+                flex-direction: column;
+                padding: 1.5rem;
+            }
         }
 
         &__icon {
@@ -81,6 +86,13 @@
             height: 1.75rem;
             margin-right: 2rem;
             fill: currentColor;
+
+            @media only screen and (max-width: $bp-small) {
+                margin-right: 0;
+                margin-bottom: .7rem;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
         }
     }
 

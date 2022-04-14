@@ -87,6 +87,9 @@ body {
   @media only screen and (max-width: 56.25rem) {
     .detail {
       padding: 3rem; } }
+  @media only screen and (max-width: 37.5rem) {
+    .detail {
+      flex-direction: column; } }
 
 .description {
   font-size: 1.4rem;
@@ -99,6 +102,10 @@ body {
     .description {
       padding: 2rem;
       margin-right: 3rem; } }
+  @media only screen and (max-width: 37.5rem) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
 
 .user-reviews {
   flex: 1;
@@ -140,6 +147,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 31.25rem) {
+    .header {
+      flex-wrap: wrap;
+      align-content: space-around;
+      height: 12rem; } }
   .header .logo {
     height: 3.25rem;
     margin-left: 2rem; }
@@ -148,6 +160,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 31.25rem) {
+      .header .search {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: var(--color-grey-light-2); } }
     .header .search__input {
       font-family: inherit;
       font-size: inherit;
@@ -266,11 +283,21 @@ body {
         .sidebar .side-nav__link:link, .sidebar .side-nav__link:visited {
           justify-content: center;
           padding: 2rem; } }
+      @media only screen and (max-width: 37.5rem) {
+        .sidebar .side-nav__link:link, .sidebar .side-nav__link:visited {
+          flex-direction: column;
+          padding: 1.5rem; } }
     .sidebar .side-nav__icon {
       width: 1.75rem;
       height: 1.75rem;
       margin-right: 2rem;
       fill: currentColor; }
+      @media only screen and (max-width: 37.5rem) {
+        .sidebar .side-nav__icon {
+          margin-right: 0;
+          margin-bottom: .7rem;
+          width: 1.5rem;
+          height: 1.5rem; } }
   .sidebar .legal {
     font-size: 1.2rem;
     color: var(--color-grey-light-4);
@@ -296,6 +323,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 37.5rem) {
+      .hotel-view .overview__heading {
+        font-size: 1.8rem;
+        padding: 1.25rem 2rem; } }
   .hotel-view .overview__stars {
     margin-right: auto;
     display: flex; }
@@ -319,13 +350,22 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 37.5rem) {
+      .hotel-view .overview__rating {
+        padding: 0 1.5rem; } }
   .hotel-view .overview__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px; }
+    @media only screen and (max-width: 37.5rem) {
+      .hotel-view .overview__rating-average {
+        font-size: 1.8rem; } }
   .hotel-view .overview__rating-count {
     font-size: .8rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5rem) {
+      .hotel-view .overview__rating-count {
+        font-size: .5rem; } }
 
 .hotel-view .recommend {
   font-size: 1.3rem;
