@@ -42,6 +42,9 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75rem) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -59,9 +62,17 @@ body {
   background-color: var(--color-grey-light-2);
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
+  @media only screen and (max-width: 75rem) {
+    .container {
+      margin: 0;
+      max-width: 100%;
+      width: 100%; } }
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25rem) {
+    .content {
+      flex-direction: column; } }
 
 .hotel-view {
   background-color: #FFF;
@@ -73,6 +84,9 @@ body {
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line); }
+  @media only screen and (max-width: 56.25rem) {
+    .detail {
+      padding: 3rem; } }
 
 .description {
   font-size: 1.4rem;
@@ -81,6 +95,10 @@ body {
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem; }
+  @media only screen and (max-width: 56.25rem) {
+    .description {
+      padding: 2rem;
+      margin-right: 3rem; } }
 
 .user-reviews {
   flex: 1;
@@ -205,10 +223,20 @@ body {
     font-size: 1.4rem;
     list-style: none;
     margin-top: 3.5rem; }
+    @media only screen and (max-width: 56.25rem) {
+      .sidebar .side-nav {
+        display: flex;
+        margin: 0; } }
     .sidebar .side-nav__item {
       position: relative; }
       .sidebar .side-nav__item:not(:last-child) {
         margin-bottom: .5rem; }
+        @media only screen and (max-width: 56.25rem) {
+          .sidebar .side-nav__item:not(:last-child) {
+            margin-bottom: 0; } }
+      @media only screen and (max-width: 56.25rem) {
+        .sidebar .side-nav__item {
+          flex: 1; } }
     .sidebar .side-nav__item::before {
       content: '';
       position: absolute;
@@ -230,10 +258,14 @@ body {
       text-transform: uppercase;
       display: block;
       padding: 1.5rem 3rem;
-      display: flex;
-      align-items: center;
       position: relative;
-      z-index: 10; }
+      z-index: 10;
+      display: flex;
+      align-items: center; }
+      @media only screen and (max-width: 56.25rem) {
+        .sidebar .side-nav__link:link, .sidebar .side-nav__link:visited {
+          justify-content: center;
+          padding: 2rem; } }
     .sidebar .side-nav__icon {
       width: 1.75rem;
       height: 1.75rem;
@@ -244,6 +276,9 @@ body {
     color: var(--color-grey-light-4);
     text-align: center;
     padding: 2.5rem; }
+    @media only screen and (max-width: 56.25rem) {
+      .sidebar .legal {
+        display: none; } }
 
 .hotel-view .gallery {
   display: flex; }
@@ -298,7 +333,8 @@ body {
   display: flex;
   align-items: center; }
   .hotel-view .recommend__friends {
-    margin-left: auto; }
+    margin-left: auto;
+    display: flex; }
   .hotel-view .recommend__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -306,7 +342,7 @@ body {
     border-radius: 50%;
     border: 3px solid #FFF; }
     .hotel-view .recommend__photo:not(:last-child) {
-      margin-right: -1.5rem; }
+      margin-right: -2rem; }
 
 .hotel-view .review {
   background-color: #FFF;
@@ -316,6 +352,10 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1; }
+  @media only screen and (max-width: 56.25rem) {
+    .hotel-view .review {
+      padding: 2rem;
+      margin-bottom: 3rem; } }
   .hotel-view .review__text {
     display: inline-block;
     margin-bottom: 2rem;
@@ -355,6 +395,9 @@ body {
 .hotel-view .cta {
   padding: 3.5rem 0;
   text-align: center; }
+  @media only screen and (max-width: 56.25rem) {
+    .hotel-view .cta {
+      padding: 2.5rem 0; } }
   .hotel-view .cta__book-now {
     font-size: 2rem;
     font-weight: 300;
