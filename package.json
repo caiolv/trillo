@@ -22,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "dev":"npm-run-all --parallel  start:react watch:sass",
-    "build": "npm-run-all build:css react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "watch:sass": "node-sass src/styles/main.scss src/styles/styles.css -w",
