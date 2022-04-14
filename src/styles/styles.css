@@ -352,6 +352,15 @@ body {
     color: var(--color-grey-light-2);
     font-family: sans-serif; }
 
+.hotel-view .cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .hotel-view .cta__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+
 .btn-inline {
   border: none;
   color: var(--color-primary);
@@ -370,6 +379,40 @@ body {
     .btn-inline:hover span {
       margin-left: 8px; }
   .btn-inline:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-dark));
+  color: #FFF;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .btn > * {
+    display: inline-block;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s; }
+  .btn__visible {
+    padding: 2rem 7.5rem; }
+  .btn__invisible {
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%; }
+  .btn:hover {
+    background-image: linear-gradient(to left, var(--color-primary), var(--color-primary-dark)); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
+  .btn:focus {
     outline: none;
     animation: pulsate 1s infinite; }
 
