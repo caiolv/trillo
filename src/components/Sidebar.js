@@ -5,7 +5,7 @@ function Sidebar() {
     <nav className="sidebar">
       <ul className="side-nav">
         <li className="side-nav__item side-nav__item--active">
-            <a href="#" className="side-nav__link">
+            <a href="javascript:;" className="side-nav__link">
                 <svg className="side-nav__icon">
                     <use href={sprite + "#icon-home"}></use>
                 </svg>
@@ -13,7 +13,7 @@ function Sidebar() {
             </a>
         </li>
         <li className="side-nav__item">
-            <a href="#" className="side-nav__link">
+            <a href="javascript:;" className="side-nav__link">
                 <svg className="side-nav__icon">
                     <use href={sprite + "#icon-aircraft-take-off"}></use>
                 </svg>
@@ -21,7 +21,7 @@ function Sidebar() {
             </a>
         </li>
         <li className="side-nav__item">
-            <a href="#" className="side-nav__link">
+            <a href="javascript:;" className="side-nav__link">
                 <svg className="side-nav__icon">
                     <use href={sprite + "#icon-key"}></use>
                 </svg>
@@ -29,7 +29,7 @@ function Sidebar() {
             </a>
         </li>
         <li className="side-nav__item">
-            <a href="#" className="side-nav__link">
+            <a href="javascript:;" className="side-nav__link">
                 <svg className="side-nav__icon">
                     <use href={sprite + "#icon-map"}></use>
                 </svg>

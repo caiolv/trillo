@@ -28,7 +28,7 @@ function Header() {
                 <span className='user-nav__notification'>13</span>
             </div>
             <div className='user-nav__user'>
-                <img src={user} alt="User Photo" className='user-nav__user-photo' />
+                <img src={user} alt="User Logged In" className='user-nav__user-photo' />
                 <span className='user-nav__user-name'>Jonas</span>
             </div>
         </nav>

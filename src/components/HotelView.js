@@ -14,13 +14,13 @@ function HotelView() {
     <main className="hotel-view">
       <div className="gallery">
         <figure className="gallery__item">
-            <img src={hotelOne} alt="Photo of Hotel 1" className="gallery__photo" />
+            <img src={hotelOne} alt="Hotel 1" className="gallery__photo" />
         </figure>
         <figure className="gallery__item">
-            <img src={hotelTwo} alt="Photo of Hotel 2" className="gallery__photo" />
+            <img src={hotelTwo} alt="Hotel 2" className="gallery__photo" />
         </figure>
         <figure className="gallery__item">
-            <img src={hotelThree} alt="Photo of Hotel 1" className="gallery__photo" />
+            <img src={hotelThree} alt="Hotel 1" className="gallery__photo" />
         </figure>
       </div>
 
