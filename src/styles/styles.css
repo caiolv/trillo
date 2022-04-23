@@ -16,9 +16,9 @@ Grey dark 3: #999
 
 */
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #FF3366;
-  --color-primary-dark: #BA265D;
+  --color-primary: #1AC185;
+  --color-primary-light: #00ff7f;
+  --color-primary-dark: #169969;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -133,11 +133,16 @@ body {
     height: 1rem;
     width: 1rem;
     margin-right: .7rem;
-    background-color: var(--color-primary);
-    -webkit-mask-image: url(../assets/chevron-thin-right.svg);
-    -webkit-mask-size: cover;
-    mask-image: url(../assets/chevron-thin-right.svg);
-    mask-size: cover; }
+    background-image: url(../assets/chevron-thin-right.svg);
+    background-size: cover; }
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      .list__item::before {
+        background-color: var(--color-primary);
+        -webkit-mask-image: url(../assets/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+        mask-image: url(../assets/chevron-thin-right.svg);
+        mask-size: cover;
+        background-image: none; } }
 
 .header {
   font-size: 1.4rem;
