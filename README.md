@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="trillo" src=".github/logo.png" width="300px" />
+  <img alt="trillo" src=".github/logo.png" width="100px" />
 </h1>
 
 <h3 align="center">trillo - your all in one booking app</h3>
@@ -13,8 +13,7 @@
 </p>
 
 <p align="center">
-  <img alt="screenshot1" src=".github/screenshot1.png" width="70%">
-  <img alt="screenshot1" src=".github/screenshot2.png" width="30%">
+  <img alt="screenshot1" src=".github/screenshot1.png"style="max-width: 800px">
 </p>
 
 ## 🚀 Running
